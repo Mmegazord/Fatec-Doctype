@@ -1,7 +1,7 @@
 /* inicial */
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family:"Space Mono", monospace;
   padding: 0;
   margin: 0;
 }
@@ -133,15 +133,6 @@ body {
   border:none;
 }
 
-.progress-bar span{
-  float: right;
-  margin-right: 6px;
-  line-height: 13px;
-  color:white;
-  font-size:12px;
-}
-
-
 @media screen and (min-width: 960px ) {
   .servico-box {
     max-width: 45%;
@@ -152,11 +143,10 @@ body {
   .sub-parallax{
     font-size:1.2rem;
   }
-  
+
 }
 
 @media screen and (min-width: 700px) {
-  
   .sobre-section-coluna{
     flex:50%;
 }

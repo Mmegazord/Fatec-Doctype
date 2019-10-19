@@ -1,11 +1,11 @@
 <template>
   <div>
+  <body>
      <v-parallax
          dark
         src="../assets/planetas-hackathon.jpg"
        >
      
-      
       <h1 class=" text-center titulo-parallax">#HACKATHON &lt;!DOCTYPE&gt;</h1>
       <h3 class="text-center sub-parallax ">Um evento de outro mundo!</h3>
         
@@ -15,8 +15,6 @@
           <v-btn class="ma-5" outlined color="white">saiba mais</v-btn>
       </div>
         </v-parallax>
-
-  <body>
     <section class="servicos-section">
       <div class="inner-width">
         <h2 class="section-titulo">{O que fazemos}</h2>
