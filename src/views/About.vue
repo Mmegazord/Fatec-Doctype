@@ -3,7 +3,7 @@
    <body>
     <section class="sobre-section">
         <div class="interior-width">
-            <h1>Sobre nós</h1>
+            <h2 class="section-titulo">{Sobre nós}</h2>
             <hr class="border">
             <div class="sobre-section-linha">
                 <div class="sobre-section-coluna">
@@ -26,27 +26,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="skills">
-                        <div class="skill">
-                            <div class="title"> Web Design</div>
-                            <div class="progress">
-                                <div class="progress-bar p2">
-                                    <span>70%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="skills">
-                        <div class="skill">
-                            <div class="title"> Web Design</div>
-                            <div class="progress">
-                                <div class="progress-bar p3">
-                                    <span>50%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
