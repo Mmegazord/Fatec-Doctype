@@ -1,6 +1,5 @@
 /* inicial */
 
-
 body {
   font-family: 'Courier New', Courier, monospace;
   padding: 0;
@@ -142,10 +141,7 @@ body {
   font-size:12px;
 }
 
-@media screen and (min-width:700px){
 
-
- 
 @media screen and (min-width: 960px ) {
   .servico-box {
     max-width: 45%;
@@ -156,11 +152,11 @@ body {
   .sub-parallax{
     font-size:1.2rem;
   }
-
   
 }
 
 @media screen and (min-width: 700px) {
+  
   .sobre-section-coluna{
     flex:50%;
 }
@@ -170,7 +166,7 @@ body {
 }
 
 }
-}
+
 
 @media screen and (max-width: 480px) {
   .servico-box {
