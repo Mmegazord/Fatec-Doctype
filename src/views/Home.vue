@@ -21,10 +21,10 @@
         <p class="texto">
           Tudo feito com muito <strike>café</strike> amor e profissionalismo</p>
         <hr class="border"/>
-        <div class="servicos-container">
+        <div class="container">
 
-          <div class="servico-box">
-            <div class="servico-icon">
+          <div class="box">
+            <div class="icon">
               <i class="fas fa-mobile-alt"></i>
             </div>
             <h3 class="servico-titulo">Apps</h3>
@@ -33,8 +33,8 @@
             </p>
           </div>
 
-          <div class="servico-box">
-            <div class="servico-icon">
+          <div class="box">
+            <div class="icon">
               <i class="fas fa-users"></i>
             </div>
             <h3 class="servico-titulo">Acessibilidade</h3>
@@ -43,8 +43,8 @@
             </p>
           </div>
 
-          <div class="servico-box">
-            <div class="servico-icon">
+          <div class="box">
+            <div class="icon">
               <i class="fas fa-brain"></i>
             </div>
             <h3 class="servico-titulo">Inteligência artificial</h3>
@@ -53,8 +53,8 @@
             </p>
           </div>
 
-          <div class="servico-box">
-            <div class="servico-icon">
+          <div class="box">
+            <div class="icon">
               <i class="fas fa-file-alt"></i>
             </div>
             <h3 class="servico-titulo">Otimização de sites (SEO)</h3>
@@ -62,8 +62,8 @@
               Utilizamos do conjunto de técnicas SEO para deixar a pesquisa pelo seu site na primeira página em qualquer mecanismo de busca.
             </p>
           </div>
-          <div class="servico-box">
-            <div class="servico-icon">
+          <div class="box">
+            <div class="icon">
               <i class="fas fa-code"></i>
             </div>
             <h3 class="servico-titulo">Sites</h3>
@@ -72,8 +72,8 @@
             </p>
           </div> 
           
-          <div class="servico-box">
-            <div class="servico-icon">
+          <div class="box">
+            <div class="icon">
               <i class="fas fa-pen-fancy"></i>
             </div>
             <h3 class="servico-titulo">Webdesign</h3>
@@ -92,11 +92,10 @@
        >
    
      <section class="projetos-destaques">
-       
         <h2 class="section-titulo">{Projetos}</h2>
-        <div class="projetos-container">
-          <div class="projetos-box">
-            <div class="projetos-icon">
+        <div class="container">
+          <div class="box">
+            <div class="icon">
             <i class="fas fa-meteor"></i>
             </div>
         

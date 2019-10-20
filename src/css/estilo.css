@@ -1,24 +1,9 @@
-/* inicial */
-
-body {
-  font-family:"Space Mono", monospace;
-  padding: 0;
-  margin: 0;
-}
-.titulo-parallax{
-  font-size: 3rem;
-}
-.servicos-section {
-  background-size: cover;
-  padding: 60px 0;
-}
-
-.section-titulo {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
+@charset "UTF-8";
+/*esse é no mobile first na parallax*/
+/*título das seções*/
+/*subtítulos das sections*/
+/*título da parallax no desktop*/
+/*sub desktop parallax*/
 .border {
   width: 160px;
   height: 2px;
@@ -26,20 +11,24 @@ body {
   margin: 40px auto;
 }
 
-.servicos-container,.projetos-container {
-  display: flex;
-  flex-wrap: wrap;
+.sobre p {
+  text-align: justify;
+}
+
+.section-titulo, .texto, .box {
+  text-align: center;
+}
+
+.container {
   justify-content: center;
 }
 
-.servico-box ,.projetos-box{
-  max-width: 33.33%;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
+.container, .sobre-section-linha {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.servico-icon, .projetos-icon {
+.icon {
   display: inline-block;
   border: 3px solid black;
   color: black;
@@ -51,24 +40,56 @@ body {
   transition: 0.3s linear;
 }
 
-.projetos-icon{
-  border: 3px solid white;
-  color: white; 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
 }
-.servico-icon i, .projetos-icon i {
+
+.titulo-parallax {
+  font-size: 3rem;
+}
+
+.servicos-section {
+  padding: 60px 0;
+}
+
+.section-titulo {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.texto {
+  font-size: 1.5rem;
+}
+
+.container {
+  flex-wrap: wrap;
+}
+
+.box {
+  max-width: 33.33%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  color: black;
+}
+
+.icon i {
   line-height: 70px;
   transform: rotate(-45deg);
   font-size: 33px;
 }
 
-.servico-box:hover .servico-icon {
+.box:hover .icon {
   background: black;
   color: #ddd;
 }
 
-
 .servico-titulo {
-  font-size: 18px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -80,86 +101,77 @@ body {
 .projetos-destaques {
   font-weight: bolder;
   color: white;
-  padding:60px;
 }
 
-.texto {
-  text-align: center;
-  font-size: 1.5rem;
-}
-.sobre-section{
-  width:100%;
-  background: whitesmoke;
-  padding:40px 0;
+.projetos-destaques i {
+  color: white;
 }
 
-.interior-width{
+.sobre-section {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.interior-width {
   padding: 0 20px;
   margin: auto;
 }
 
-.sobre-section h1{
-  text-align: center;  
-}
-
-
-.sobre-section-linha{
-  display:flex;
+.sobre-section-linha {
   flex-wrap: wrap;
 }
 
-.sobre-section-coluna{
-  flex:100%;
-  margin: 10px 0; 
-  
+.sobre-section-coluna {
+  flex: 100%;
+  margin: 10px 0;
 }
-.sobre{
+
+.sobre {
   padding-right: 30px;
-  padding:0;
+  padding: 0;
 }
-.sobre p{
-  text-align: justify;
+
+.sobre p {
   margin-bottom: 20px;
+  font-size: 16px;
 }
-.embed{
-  position:relative;
-  width:100%;
+
+.embed {
+  position: relative;
+  width: 100%;
   padding-bottom: 56.25%;
 }
-.embed iframe{
+
+.embed iframe {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 100%;
-  border:none;
+  border: none;
 }
 
-@media screen and (min-width: 960px ) {
-  .servico-box {
+@media screen and (min-width: 960px) {
+  .box {
     max-width: 45%;
   }
-  .titulo-parallax{
+  .titulo-parallax {
     font-size: 5rem;
   }
-  .sub-parallax{
-    font-size:1.2rem;
+  .sub-parallax {
+    font-size: 1.2rem;
   }
-
 }
 
 @media screen and (min-width: 700px) {
-  .sobre-section-coluna{
-    flex:50%;
+  .sobre-section-coluna {
+    flex: 50%;
+  }
+  .video {
+    padding-left: 30px;
+  }
 }
-
-.video{
-    padding-left:30px;
-}
-
-}
-
 
 @media screen and (max-width: 480px) {
-  .servico-box {
+  .box {
     max-width: 100%;
   }
 }
