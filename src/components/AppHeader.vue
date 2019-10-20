@@ -18,7 +18,7 @@
 
     <ul class="menu">
       <a style="color:white;" href="/">Início</a>
-      <a style="color:white;"  href="/paginas/projetos">Projetos</a>
+      <a style="color:white;"  href="paginas/projetos">Projetos</a>
       <a style="color:white;" href="/paginas/hackathon">Hackathon</a>
       <a style="color:white;" href="/sobre">Sobre</a>
       <a style="color:white;" href="/paginas/contato">Contato</a>
