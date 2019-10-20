@@ -3,7 +3,7 @@
   <body>
      <v-parallax
          dark
-        src="../assets/planetas-hackathon.jpg"
+        src="../assets/planetas-hackathon.jpg" alt="imagem contendo ilustração de planetas e estrelas"
        >
      
       <h1 class=" text-center titulo-parallax">#HACKATHON &lt;!DOCTYPE&gt;</h1>
@@ -88,7 +88,7 @@
      
        <v-parallax
          dark
-        src="../assets/planetas-hackathon.jpg"
+        src="../assets/planetas-hackathon.jpg" alt="imagem contendo ilustração de planetas e estrelas"
        >
    
      <section class="projetos-destaques">

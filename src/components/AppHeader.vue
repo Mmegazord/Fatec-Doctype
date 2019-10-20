@@ -10,19 +10,19 @@
   </head>
   <body>
 <header>
- <img class="logo" @click="inicial" src="../assets/logo_doctype.svg">
+ <img class="logo" @click="inicial" src="../assets/logo_doctype.svg" alt="logotipo da empresa Doctype">
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-bars"></i>
     </label>
 
     <ul class="menu">
-      <a style="color:white;" @click="inicial">Início</a>
-      <a style="color:white;"  @click="prj">Projetos</a>
-      <a style="color:white;" @click="hack">Hackathon</a>
-      <a style="color:white;" @click="sobre">Sobre</a>
-      <a style="color:white;"  @click="contato">Contato</a>
-      <a style="color:white;" @click="time">Login</a>
+      <a style="color:white;" href="/">Início</a>
+      <a style="color:white;"  href="/paginas/projetos">Projetos</a>
+      <a style="color:white;" href="/paginas/hackathon">Hackathon</a>
+      <a style="color:white;" href="/sobre">Sobre</a>
+      <a style="color:white;" href="/paginas/contato">Contato</a>
+      <a style="color:white;" href="/painel/login">Login</a>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
@@ -32,22 +32,6 @@
 
   </body>
 
-    <!-- <v-toolbar
-   color="blue-grey darken-4  white--text">
-       
-      <v-toolbar-title @click="inicial"><!DOCTYPE></v-toolbar-title>
-
-      <div class="flex-grow-1"></div>
-
-      <v-toolbar-items>
-        <v-btn class=" white--text" text @click="inicial">Início</v-btn>
-        <v-btn class=" white--text" text @click="prj">Projetos</v-btn>
-        <v-btn class=" white--text" text @click="hack">Hackathon</v-btn>
-        <v-btn class=" white--text" text @click="sobre">Sobre Nós</v-btn>
-        <v-btn class=" white--text" text @click="contato">Contato</v-btn>
-        <v-btn class=" white--text" text @click="time">Usuário</v-btn>
-      </v-toolbar-items>
-    </v-toolbar> -->
 </div>
   
 
@@ -98,6 +82,7 @@ float: right;
   line-height: 100px;
 }
 .menu a{
+ 
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 10px;
