@@ -25,7 +25,7 @@
 
           <div class="box">
             <div class="icon">
-              <i class="fas fa-mobile-alt"></i>
+              <i class="fas fa-mobile-alt" alt="Criação de aplicativos" ></i>
             </div>
             <h3 class="servico-titulo">Apps</h3>
             <p class="servico-desc">
@@ -35,7 +35,7 @@
 
           <div class="box">
             <div class="icon">
-              <i class="fas fa-users"></i>
+              <i class="fas fa-users" alt="Serviços de Acessibilidade" ></i>
             </div>
             <h3 class="servico-titulo">Acessibilidade</h3>
             <p class="servico-desc">
@@ -45,7 +45,7 @@
 
           <div class="box">
             <div class="icon">
-              <i class="fas fa-brain"></i>
+              <i class="fas fa-brain" alt ="Desenvolvimento de tecnolgias com inteligência artificial"></i>
             </div>
             <h3 class="servico-titulo">Inteligência artificial</h3>
             <p class="servico-desc">
@@ -55,7 +55,7 @@
 
           <div class="box">
             <div class="icon">
-              <i class="fas fa-file-alt"></i>
+              <i class="fas fa-file-alt" alt="Serviços de otimização de sites (SEO)" ></i>
             </div>
             <h3 class="servico-titulo">Otimização de sites (SEO)</h3>
             <p class="servico-desc">
@@ -64,7 +64,7 @@
           </div>
           <div class="box">
             <div class="icon">
-              <i class="fas fa-code"></i>
+              <i class="fas fa-code" alt="Criação de Sites" ></i>
             </div>
             <h3 class="servico-titulo">Sites</h3>
             <p class="servico-desc">
@@ -74,7 +74,7 @@
           
           <div class="box">
             <div class="icon">
-              <i class="fas fa-pen-fancy"></i>
+              <i class="fas fa-pen-fancy" alt="Serviços de Webdesign" ></i>
             </div>
             <h3 class="servico-titulo">Webdesign</h3>
             <p class="servico-desc">
@@ -96,7 +96,7 @@
         <div class="container">
           <div class="box">
             <div class="icon">
-            <i class="fas fa-meteor"></i>
+            <i class="fas fa-meteor" alt="projetos" ></i>
             </div>
         
             </div>
