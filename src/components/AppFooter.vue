@@ -18,7 +18,7 @@
       class="text-center"
         cols="12"
       >
-       <i class="fab fa-facebook-square"></i> <i class="fab fa-github-square"></i> <i class="fab fa-twitter-square"></i> 
+      <i class="fab fa-behance-square"></i> <i class="fab fa-facebook-square"></i> <i class="fab fa-github-square"></i> <i class="fab fa-twitter-square"></i> 
       </v-col>
     </v-footer>
   </v-card>

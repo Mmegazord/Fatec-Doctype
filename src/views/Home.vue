@@ -12,7 +12,7 @@
   
      
      <div class="text-center">
-          <v-btn class="ma-5" outlined color="white">saiba mais</v-btn>
+          <v-btn class="ma-5" outlined color="white" href="/paginas/hackathon">saiba mais</v-btn>
       </div>
         </v-parallax>
     <section class="servicos-section">
@@ -106,7 +106,7 @@
         </p>
         <hr class="border"/>
         <div class="text-center">
-      <v-btn class="ma-5 text-center" outlined color="white">PORTFÓLIO</v-btn>
+      <v-btn class="ma-5 text-center" outlined color="white" href="https://www.behance.net/gallery/76255517/The-New-Design-Frontier">PORTFÓLIO</v-btn>
         </div>
          
     </section>
