@@ -82,37 +82,7 @@
   </v-card>
 
   
-    <!-- imagens -->  
-  <template>
-    <!-- container fluído -->
-  <v-container fluid>
-    <v-row>
-      <!-- v-col para as colunas, no tamanho desktop elas terão de ocupar 6, no tamanho mobile 4 -->
-      <v-col cols="6" sm="4">
-        <!-- o v-img permite que importemos imagens -->
-        <v-img
-          src="https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537__340.jpg"
-          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-        ></v-img>
-      </v-col>
-
-      <v-col cols="6" sm="4">
-        <v-img src="https://cdn.pixabay.com/photo/2018/05/04/10/30/team-3373638__340.jpg">
-          <div class="fill-height bottom-gradient"></div>
-        </v-img>
-      </v-col>
-
-      <v-col cols="6" sm="4">
-        <v-img src="https://cdn.pixabay.com/photo/2015/01/08/18/27/startup-593341__340.jpg">
-          <div class="fill-height repeating-gradient"></div>
-        </v-img>
-      </v-col>
-    </v-row>
-    
-  </v-container>
-  
-  <!-- final do cartão de alerta -->
-</template>
+ 
 <!-- template das imagens -->
   
 
@@ -123,7 +93,6 @@
 
 </style>
 <script>
-// os métodos são os caminhos que cada propriedade click irá nos levar
 export default {
    computed: {
     user () {
