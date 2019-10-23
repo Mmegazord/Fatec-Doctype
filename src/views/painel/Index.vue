@@ -1,68 +1,162 @@
 <template>
-<div>
-  <!-- card -->
-  <template>
-  <v-card height="350px">
+  <v-app id="inspire">
     <v-navigation-drawer
-      absolute
-      permanent
-      left
+      v-model="drawer"
+      app
+      clipped
     >
-      <template v-slot:prepend>
-        <v-list-item two-line>
-          <v-list-item-avatar>
-            <img src="https://randomuser.me/api/portraits/women/81.jpg">
-          </v-list-item-avatar>
-
-          <v-list-item-content class="">
-            <v-list-item-title>oi</v-list-item-title>
-            <v-list-item-subtitle>Logged In</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </template>
-
-      <v-divider></v-divider>
-
+     <!-- lista informações admin -->
       <v-list dense>
-        <v-list-item
-          v-for="item in items"
-          :key="item.title"
-        
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
+        <v-list-item >
+          <v-list-item-avatar>
+            <v-avatar color="red">
+               <span class="white--text headline">&lt; ! &gt;</span>
+            </v-avatar>
+          </v-list-item-avatar>
+           <v-list-item-title>Jane Smith</v-list-item-title>
         </v-list-item>
-      </v-list>
+      <!-- fim lista -->
+        <!-- navegação -->
+        
+
+      <v-list-group
+        value="true"
+      >
+        <template v-slot:activator>
+          <v-list-item-title>Páginas</v-list-item-title>
+        </template>
+
+        <v-list-group
+          no-action
+          sub-group
+          value="true"
+        >
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>Manutenção</v-list-item-title>
+            </v-list-item-content>
+          </template>
+
+          <v-list-item
+            v-for="(admin, i) in admins"
+            :key="i"
+            link
+          >
+            <v-list-item-title v-text="admin[0]"></v-list-item-title>
+            <v-list-item-icon>
+              <v-icon v-text="admin[1]"></v-icon>
+            </v-list-item-icon>
+          </v-list-item>
+        </v-list-group>
+
+        <v-list-group
+          sub-group
+          no-action
+        >
+          <template v-slot:activator>
+            <v-list-item-content>
+              <v-list-item-title>Hackathon 2019</v-list-item-title>
+            </v-list-item-content>
+          </template>
+          <v-list-item
+            v-for="(crud, i) in cruds"
+            :key="i"
+            
+          >
+            <v-list-item-title v-text="crud[0]"></v-list-item-title>
+            <v-list-item-action>
+              <v-icon v-text="crud[1]"></v-icon>
+            </v-list-item-action>
+          </v-list-item>
+        </v-list-group>
+      </v-list-group>
+    </v-list>
+
+       
+        <!-- fim navegação -->
+   
     </v-navigation-drawer>
-  </v-card>
+
+    <!-- barra -->
+    <v-app-bar
+      app
+      clipped-left
+      height="100"
+      
+    >
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title>Administração</v-toolbar-title> 
+   
+    </v-app-bar>
+    <!-- fim barra -->
+    
+    <!-- meio da dash -->
+    <v-content>
+      <v-container
+        class="fill-height"
+        fluid
+      >
+        <v-row
+          align="center"
+          justify="center"
+        >
+          <v-col class="shrink">
+            <v-tooltip right>
+              <template v-slot:activator="{ on }">
+                <v-btn
+                  :href="source"
+                  icon
+                  large
+                  target="_blank"
+                  v-on="on"
+                >
+                  <v-icon large>mdi-code-tags</v-icon>
+                </v-btn>
+              </template>
+              <span>Source</span>
+            </v-tooltip>
+            <v-tooltip right>
+              <template v-slot:activator="{ on }">
+                <v-btn
+                  icon
+                  large
+                  href="https://codepen.io/johnjleider/pen/bXNzZL"
+                  target="_blank"
+                  v-on="on"
+                >
+                  <v-icon large>mdi-codepen</v-icon>
+                </v-btn>
+              </template>
+              <span>Codepen</span>
+            </v-tooltip>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
+
+  </v-app>
 </template>
 
-  
- 
-<!-- template das imagens -->
-  
-
-</div>
-
-</template>
-<style>
-
-</style>
 <script>
   export default {
-    data () {
-      return {
-        items: [
-          { title: 'Home', icon: 'mdi-home-city' },
-          { title: 'My Account', icon: 'mdi-account' },
-          { title: 'Users', icon: 'mdi-account-group-outline' },
-        ],
-      }
+    props: {
+      source: String,
+    },
+    data: () => ({
+      admins: [
+        ['Início'],
+        ['Preços'],
+        ['Sobre'],
+        ['Contato'],
+      ],
+    cruds: [
+        ['Participantes'],
+       
+      ],
+      drawer: null,
+    }),
+    created () {
+      this.$vuetify.theme.dark = true
     },
   }
 </script>

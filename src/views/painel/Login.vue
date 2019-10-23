@@ -40,10 +40,10 @@ export default {
   },
   methods: {
     acessar () {
-      if (this.login === 'Aline' && this.password === '123') {
+      if (this.login === 'Admin' && this.password === '123') {
         this.$ls.set('user', {
           login: this.login,
-          nome: 'Aline',
+          nome: 'Admin',
         })
         this.$router.push('/painel')
       } else {

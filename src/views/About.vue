@@ -1,6 +1,7 @@
 <template>
   <div>
    <body>
+       <app-header/>
     <section class="sobre-section">
         <div class="interior-width">
             <h2 class="section-titulo">{Sobre nós}</h2>
@@ -31,5 +32,15 @@
         </div>
     </section>
 </body>
+<app-footer/>
   </div>
 </template>
+<script>
+ import AppHeader from '../components/AppHeader'
+  import AppFooter from '../components/AppFooter'
+export default {
+    components:{
+        AppFooter,AppHeader,
+    }
+}
+</script>

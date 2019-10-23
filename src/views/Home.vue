@@ -1,10 +1,11 @@
 <template>
   <div>
   <body>
+    <app-header/>
      <v-parallax
          dark
         src="../assets/planetas-hackathon.jpg" alt="imagem contendo ilustração de planetas e estrelas"
-       >
+        >
      
       <h1 class=" text-center titulo-parallax">#HACKATHON &lt;!DOCTYPE&gt;</h1>
       <h3 class="text-center sub-parallax ">Um evento de outro mundo!</h3>
@@ -15,7 +16,7 @@
           <v-btn class="ma-5" outlined color="white" href="/paginas/hackathon">saiba mais</v-btn>
       </div>
         </v-parallax>
-    <section class="servicos-section">
+    <section class="servicos-section" title="Seção O que fazemos">
       <div class="inner-width">
         <h2 class="section-titulo">{O que fazemos}</h2>
         <p class="texto">
@@ -91,30 +92,39 @@
         src="../assets/planetas-hackathon.jpg" alt="imagem contendo ilustração de planetas e estrelas"
        >
    
-     <section class="projetos-destaques">
+     <section class="projetos-destaques" title="Seção de Projetos">
         <h2 class="section-titulo">{Projetos}</h2>
-        <div class="container">
+        <!-- <div class="container">
           <div class="box">
             <div class="icon">
             <i class="fas fa-meteor" alt="projetos" ></i>
             </div>
         
             </div>
-        </div>
+        </div> -->
         <p class="texto">
-        Não deixe seu negócio entrar em extinção, junte-se a &lt;!DOCTYPE&gt;!
+        Nossos projetos estão no Behance, venha conhecer!
         </p>
         <hr class="border"/>
         <div class="text-center">
-      <v-btn class="ma-5 text-center" outlined color="white" href="https://www.behance.net/gallery/76255517/The-New-Design-Frontier">PORTFÓLIO</v-btn>
+      <v-btn class="ma-5 text-center" outlined color="white" href="https://www.behance.net/gallery/76255517/The-New-Design-Frontier" target="blank" >PORTFÓLIO</v-btn>
         </div>
          
     </section>
          </v-parallax>  
      
-        
+       
   
   </body>
-
+ <app-footer/>
   </div>
 </template>
+<script>
+ import AppHeader from '../components/AppHeader'
+  import AppFooter from '../components/AppFooter'
+export default {
+  components:{
+    AppFooter,AppHeader,
+  }
+}
+</script>
