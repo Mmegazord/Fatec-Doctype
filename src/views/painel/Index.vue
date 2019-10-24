@@ -86,7 +86,9 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title>Administração</v-toolbar-title> 
-   
+      <v-icon @click="sair">
+      mdi-logout
+      </v-icon>
     </v-app-bar>
     <!-- fim barra -->
     
@@ -143,6 +145,9 @@
       source: String,
     },
     data: () => ({
+      sair(){
+         this.$router.push('/')
+      },
       admins: [
         ['Início'],
         ['Preços'],
